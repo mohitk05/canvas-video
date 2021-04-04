@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <script src="./main.ts"></script>
+    <style>
+        body {
+            font-family: Prata;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Canvas Video - Custom Web Component</h1>
+    <div style="display: flex;">
+        <canvas-video id="cnvs-vid"
+            data-video="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+        </canvas-video>
+        <div style="flex: 1">
+            <textarea style="height: 600px; width: 100%;" id="config"></textarea>
+            <br>
+            <input id="update-config" type="submit" value="Update Config">
+        </div>
+    </div>
+</body>
+
+</html>
